@@ -3,11 +3,11 @@ import java.util.*;
 public class Reto8 {
     public static void main(String[] args) {
         Scanner lectura = new Scanner(System.in);
-        int butget, cantidad, valor, contador, totalg, gastos, seguir, valort;
+        int  cantidad, valor, contador, seguir, valort;
         seguir = 1;
-        butget=100000;
+       
         contador = 0;
-        totalg=0;
+        
     
  
 
