@@ -4,7 +4,7 @@ public class Prueba {
     public static void main(String[] args) {
         
          Cuadrado c1 = new Cuadrado();
-
+        
          c1.setLado(5);
          c1.calcularArea();
 
@@ -24,7 +24,7 @@ public class Prueba {
          l1.iniciar();
          l1.jugar();
          l1.finalizar();
-
+         
 
 
     }

@@ -3,13 +3,64 @@ import java.util.Scanner;
 
 public class persona {
     private Scanner lectura= new Scanner(System.in);
+    private String tipoDoc, nombre, apellido, sexo;
+    private int documento, edad;
+    private Double estatura, imc, peso;
 
-    public String tipoDoc, nombre, apellido, sexo;
-    public int documento, edad;
-    public Double estatura, imc, peso;
-
-  
-
+    public String gettipoDoc(){
+        return tipoDoc;
+    }
+    public void settipoDoc(String tipoDoc){
+        this.tipoDoc=tipoDoc;
+    }
+    public String getnombre(){
+        return nombre;
+    }
+    public void setnombre(String nombre){
+        this.nombre=nombre;
+    }
+    public String getapellido(){
+        return apellido;
+    }
+    public void setapellido(String apellido){
+        this.apellido=apellido;
+    }
+    public String getsexo(){
+        return sexo;
+    }
+    public void setsexo(String sexo){
+        this.sexo=sexo;
+    }
+    public int getdocumento(){
+        return documento;
+    }
+    public void setdocumento(int documento){
+        this.documento=documento;
+    }
+    public int getedad(){
+        return edad;
+    }
+    public void setedad(int edad){
+        this.edad=edad;
+    }
+    public double getestatura(){
+        return estatura;
+    }
+    public void setestatura(double estatura){
+        this.estatura=estatura;
+    }
+    public double getimc(){
+        return imc;
+    }
+    public void setimc(double imc){
+        this.imc=imc;
+    }
+    public double getpeso(){
+        return peso;
+    }
+    public void setpeso(double peso){
+        this.peso=peso;
+    }
     public void pedirDatos(){
         System.out.println("Por favor ingrese su tipo de documento");
         tipoDoc= lectura.nextLine();
@@ -32,7 +83,6 @@ public class persona {
 
 
     }
-
     public void mostrarDatos(){
         System.out.println(" su tipo de documento es :" + tipoDoc);        
         System.out.println("Su documento es " + documento);    
@@ -63,5 +113,6 @@ public class persona {
                 System.out.println("PESOIDEAL");
             }
         return imc;
-}
+       }
+       
 }
