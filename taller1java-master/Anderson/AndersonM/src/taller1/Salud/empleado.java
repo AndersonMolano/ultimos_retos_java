@@ -1,6 +1,8 @@
 package taller1.Salud;
 import java.util.Scanner;
 
+import taller1.Trabajos.Edad;
+
 public class empleado extends persona {
 private String Cargo, departamento;
 private int valorhora, horastrabajadas, total;
@@ -35,11 +37,11 @@ public void settotalt(double totalt){
 public void settotal(int total){
     this.total=total;
 }
-public double getcalcularHonorarios() {
+public void getcalcularHonorarios() {
        total= valorhora*horastrabajadas;
        descuento= (horastrabajadas * 0.966) / 100 ;
        totalt= total-descuento; 
-    return totalt;
+       System.out.println("Su total a pagar es " + totalt);
 }
 
 public String getCargo(){
@@ -73,7 +75,14 @@ public int gettotal(){
    System.out.println("Escriba el valor de la hora");
    valorhora=Lectura.nextInt();
 
+   }
+   public void mostrarEmpleado(){
+
+   System.out.println("Su cargo es " + Cargo);
+   System.out.println("Las horas trabajadas son " + horastrabajadas);
+   System.out.println("El valor por hora es " + valorhora);
+   }
 }
-}
+
 
     

@@ -93,6 +93,11 @@ public class persona {
         System.out.println("Su edad es  " + edad );       
         System.out.println("Su sexo es " + sexo);
     }
+    public void mostrarDatos2(){
+        System.out.println("su tipo de documento es " + tipoDoc);
+        System.out.println("su número de documento es " + documento);
+        System.out.println("Su nombre es " + nombre + " y su apellido es " + apellido);
+        }
     
     public void mayorEdad(){
         if(edad<=18){

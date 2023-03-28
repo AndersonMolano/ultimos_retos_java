@@ -1,6 +1,6 @@
-package taller1.polimorfismo;
+package taller1.polimorfissmo;
 import java.util.Scanner;
-public class Circulo extends Figura {
+public class Circulo extends Figuras {
     private Scanner lectura= new Scanner(System.in);
     double pi, area;
     private float radio;
@@ -11,7 +11,6 @@ public class Circulo extends Figura {
     public void setRadio(float radio){
         this.radio=radio;
     }
-    
     @Override
     public void calcularArea(){
         System.out.println("Ingresa el radio del circulo");

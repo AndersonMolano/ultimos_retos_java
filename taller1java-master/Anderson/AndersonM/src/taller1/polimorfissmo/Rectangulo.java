@@ -1,8 +1,8 @@
-package taller1.polimorfismo;
+package taller1.polimorfissmo;
 
 import java.util.Scanner;
 
-public class Triangulo  extends Figura{
+public class Rectangulo  extends Figuras{
     private Scanner lectura= new Scanner(System.in);
     private float base, altura;
 
@@ -22,14 +22,14 @@ public class Triangulo  extends Figura{
 
     @Override
     public void calcularArea(){
-        System.out.println("Ingresa la base del triangulo");
+        System.out.println("Ingresa la base del rectangulo");
         base=lectura.nextFloat();
         
-        System.out.println("Ingrese la altura del triangulo");
+        System.out.println("Ingrese la altura del rectangulo");
         altura=lectura.nextFloat();
 
-        float area= base*altura/2;
-        System.out.println("La base del triangulo es "+this.base+" La altura es " + this.altura+ " el area es " + area);
+        float area= base*altura;
+        System.out.println("La base del rectangulo es "+this.base+" La altura es " + this.altura+ " el area es " + area);
     }
     
 }

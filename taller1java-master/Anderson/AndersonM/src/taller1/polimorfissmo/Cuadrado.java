@@ -1,12 +1,10 @@
-package taller1.polimorfismo;
-
-public class Cuadrado extends Figura{
+package taller1.polimorfissmo;
+public class Cuadrado extends Figuras{
     private float lado;
 
     public float getLado(){
         return lado;
     }
-
     public void setLado(float lado) {
         this.lado = lado;
     }
